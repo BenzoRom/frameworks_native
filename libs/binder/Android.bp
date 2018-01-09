@@ -132,6 +132,10 @@ cc_library {
     sanitize: {
         misc_undefined: ["integer"],
     },
+
+    lto: {
+        thin: true,
+    },
 }
 
 // AIDL interface between libbinder and framework.jar
