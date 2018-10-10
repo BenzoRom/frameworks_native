@@ -130,7 +130,7 @@ cc_library {
 
     clang: true,
     sanitize: {
-        misc_undefined: ["integer"],
+        never: true,
     },
 
     lto: {
