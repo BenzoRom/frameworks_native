@@ -23,3 +23,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.5 \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=32m
+
+# Provides overrides to configure the ART inliner for a 6GB phone
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.image-dex2oat-flags="--inline-max-code-units=48"
