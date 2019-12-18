@@ -28,3 +28,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-flags="--inline-max-code-units=48"
+
+PRODUCT_DEX_PREOPT_BOOT_FLAGS += --inline-max-code-units=48
